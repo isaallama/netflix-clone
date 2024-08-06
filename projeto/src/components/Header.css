@@ -1,0 +1,112 @@
+Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: transparent;
+    transition: all ease 0.s;
+    color: #FFF;
+    z-index: 999;
+    padding: 0 30px;
+
+}
+
+header.black {
+    background-color: #141414;
+}
+
+.header--logo {
+    height: 25px;
+}
+
+.header--logo img {
+    height: 100%;
+}
+
+.header--user {
+    height: 35px;
+}
+
+.header--user img {
+    height: 100%;
+    border-radius: 3px;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar--container {
+    display: flex;
+    align-items: center;
+    transition: width 0.3s ease;
+    width: 40px;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    padding: 5px;
+    background-color: #000;
+    opacity: 0.7;
+    margin-left: 900px;
+}
+
+.search-bar--container.active {
+    width: 250px;
+}
+
+.search-bar--icon {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: auto;
+    
+}
+
+.search-bar--container input {
+    border: none;
+    padding: 5px 10px;
+    outline: none;
+    flex-grow: 1;
+    background-color: #000;
+    border-color: #fff;
+    color: #fff;
+}
+
+.search-bar--results {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    color: white;
+    background-color: #000;
+    opacity: 0.7;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search-bar--results li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-bar--results li:hover {
+    background-color: #f0f0f0;
+}
+
+.custom-color {
+    color: #fff;
+}
+
+
