@@ -1,3 +1,6 @@
+# Assignment Responses
+The following project encompasses what was requested by the professor in Activity 06: 'Creation of a Netflix Front-end Clone'.
+
 ## Getting Started
 In order to configure your machine to execute the following scripts, some requirements will be needed. Therefore, here is an example of the steps to follow to get a local copy.
 
