@@ -62,4 +62,9 @@ cd projeto
 ## About the Project
 The objective of this project is to test my Front-End skills. To achieve this, I used a [video](https://www.youtube.com/watch?v=tBweoUiMsDg) from the Bonieky Lacerda channel for assistance, as well as the [TMDB API](https://developer.themoviedb.org/docs/getting-started).
 
+#### Technologies Used
+* React: A JavaScript library for building user interfaces.
+* React DOM: The package that serves as the entry point to the DOM and server renderers for React.
+
+
 ![Netflix Página Inicial](https://github.com/user-attachments/assets/e4a820ec-cc98-47ff-8f5d-c3128dfb2fe4)
