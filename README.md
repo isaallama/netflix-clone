@@ -53,8 +53,6 @@ npm -v
 
 <p>If you want to clone it, please follow the example exactly as shown, in your command line type:</p>
 
-From your command line:
-
 ```bash
 # Clone this repository
 git clone https://github.com/isaallama/netflix-clone.git
