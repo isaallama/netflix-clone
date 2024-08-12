@@ -66,5 +66,10 @@ The objective of this project is to test my Front-End skills. To achieve this, I
 * React: A JavaScript library for building user interfaces.
 * React DOM: The package that serves as the entry point to the DOM and server renderers for React.
 
+#### Click on the image below to watch the demonstration video of the Netflix clone in action:
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=NacG7h-pwGI">
+    <img src="https://github.com/user-attachments/assets/ebe80870-6949-4da7-bdbd-8b744b028433" alt="Captura de tela 2024-08-12 144038" width="800"/>
+  </a>
+</p>
 
-![Netflix Página Inicial](https://github.com/user-attachments/assets/e4a820ec-cc98-47ff-8f5d-c3128dfb2fe4)
