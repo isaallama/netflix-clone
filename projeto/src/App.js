@@ -21,7 +21,8 @@ export default function App() {
             let originals = list.filter(i => i.slug === 'originals');
             let randomChosen = Math.floor(Math.random() * (originals[0].items.results.length - 1));
             let chosen = originals[0].items.results[randomChosen];
-            let chosenInfo = await Tmdb.getMovieInfo(chosen.id, 'tv');
+            let chosenInfo = await Tmdb.getMovieInfo(chosen);
+            console.log(chosenInfo);
             setFeaturedData(chosenInfo);
         }
 
@@ -44,9 +45,9 @@ export default function App() {
         }
     }, []);
 
-    const handleMovieClick = async (id) => {
-        console.log('Fetching movie info for ID:', id);
-        let movieInfo = await Tmdb.getMovieInfo(id, 'tv');
+    const handleMovieClick = async (item) => {
+        console.log('Fetching movie info for ID:', item.id);
+        let movieInfo = await Tmdb.getMovieInfo(item);
         console.log('Fetched movie info:', movieInfo); 
         setSelectedMovie(movieInfo);
         setModalOpen(true);
@@ -54,7 +55,9 @@ export default function App() {
 
     return (
         <div className="page">
-            <Header black={blackHeader} />
+            <Header black={blackHeader} 
+                onSearchClick={handleMovieClick}
+            />
 
             {featuredData && (
                 <MovieRow

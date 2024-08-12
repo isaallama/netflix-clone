@@ -46,7 +46,7 @@ const MovieRow = ({ title, items, onMovieClick }) => {
                         <div
                             key={key}
                             className="movieRow--item"
-                            onClick={() => onMovieClick(item.id)} 
+                            onClick={() => onMovieClick(item)} 
                         >
                             <img
                                 src={`https://image.tmdb.org/t/p/w300${item.poster_path}`}

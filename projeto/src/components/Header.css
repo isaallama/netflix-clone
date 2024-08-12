@@ -89,7 +89,7 @@ header.black {
     color: white;
     background-color: #000;
     opacity: 0.7;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 4px;
     list-style: none;
     padding: 0;
@@ -102,7 +102,7 @@ header.black {
 }
 
 .search-bar--results li:hover {
-    background-color: #f0f0f0;
+    background-color: #252525;
 }
 
 .custom-color {

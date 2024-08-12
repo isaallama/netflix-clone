@@ -2,7 +2,7 @@ import React from "react";
 import './Header.css';
 import SearchBar from './SearchBar';
 
-export default ({ black }) => {
+export default ({ black, onSearchClick }) => {
     return (
         <header className={black ? 'black' : ''}>
             <div className="header--logo">
@@ -11,7 +11,9 @@ export default ({ black }) => {
                 </a>
             </div>
             <div className="header--search">
-                <SearchBar/>
+                <SearchBar
+                    onSearchClick={onSearchClick}
+                />
             </div>
             <div className="header--user">
                 <a href="/">

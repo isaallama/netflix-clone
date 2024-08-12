@@ -12,7 +12,7 @@ export default {
         return [
             {
                 slug: "originals",
-                title: "Originais do Netflix",  
+                title: "Originais do Netflix",
                 items: await basicFetch(`/discover/tv?api_key=${API_KEY}&with_networks=213&language=pt-BR`),
             },
             {
@@ -54,23 +54,20 @@ export default {
         ];
     },
 
-    getMovieInfo: async (movieId, type) => {
+    getMovieInfo: async (movie) => {
         let info = {};
-        if(movieId){
+        let movieId = movie.id;
+        let type = movie.video === undefined ? 'tv' : 'movie'; 
 
-            switch (type){
-                case 'movie':
-                    info = await basicFetch(`/movie/${movieId}?api_key=${API_KEY}&language=pt-BR`);
-                break;
-                case 'tv':
-                    info = await basicFetch(`/tv/${movieId}?api_key=${API_KEY}&language=pt-BR`);
-                break;
-                default:
-                    info = null;    
-                break;
-            }
+        if(!movieId){
+            return info;
         }
 
+        if (type === 'tv') {
+            info = await basicFetch(`/tv/${movieId}?api_key=${API_KEY}&language=pt-BR`);
+        } else {
+            info = await basicFetch(`/movie/${movieId}?api_key=${API_KEY}&language=pt-BR`);
+        }
         return info;
     }
    
